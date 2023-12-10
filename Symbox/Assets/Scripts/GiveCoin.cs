@@ -7,11 +7,12 @@ using UnityEngine.UI;
 public class GiveCoin : MonoBehaviour
 {
     public int maxMoneyGiven = 5;
+    public int minMoneyGiven = 0;
 
     
     public void GiveMoney()
     {
-        int moneyGiven = Random.Range(0, maxMoneyGiven);
+        int moneyGiven = Random.Range(minMoneyGiven, maxMoneyGiven);
         Debug.Log("Money Given" + moneyGiven);
     }
 }

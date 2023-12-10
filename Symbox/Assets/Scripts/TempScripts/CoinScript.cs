@@ -2,18 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
-public class CoinScript : MonoBehaviour
+public class CoinScript : GlobalVariables
 {
-    public TMP_Text coinText;
-    private int money;
-    private int maxRange = 500;
-    private int minRange = 0;
+    public TMP_Text displayText;
+    private int moneyGiven;
 
 
     public void GrantMoney()
     {
-        money += Random.Range(minRange,maxRange);
+        moneyGiven = Random.Range(minRange,maxRange);
+        money += moneyGiven;
         coinText.text = "Coins: $" + money; 
     }
+
+    public void DisplayMoneyGiven()
+    {
+        displayText.text = "+ " + moneyGiven + "$"; 
+    }
+    
+
+    
+
+
 }

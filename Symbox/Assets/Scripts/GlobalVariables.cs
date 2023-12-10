@@ -6,13 +6,8 @@ using TMPro;
 
 public class GlobalVariables : MonoBehaviour
 {
-    public static int coinCount;
-    public TMP_Text coinDisplay;
-    public int internalCoin;
-
-    void update ()
-    {
-        internalCoin = coinCount;
-        coinDisplay.text = "Coins: " + internalCoin.ToString();
-    }
+    public TMP_Text coinText;
+    protected int money;
+    protected int maxRange = 6;
+    protected int minRange = 0;
 }
