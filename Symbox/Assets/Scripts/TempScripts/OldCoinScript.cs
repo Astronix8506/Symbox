@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class CoinScript : GlobalVariables
+public class OldCoinScript : GlobalVariables
 {
     public TMP_Text displayText;
     private int moneyGiven;

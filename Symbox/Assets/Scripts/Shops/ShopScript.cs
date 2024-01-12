@@ -4,10 +4,16 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class ShopScript : GlobalVariables
+public class ShopScript : MonoBehaviour
 {
     private int increaseMaxCost;
     private int increaseMinCost;
+
+
+    void Start()
+    {
+        _coinScript = FindObjectOfType()
+    }
 
     public void IncreasedMoneyMinRange()
     {
